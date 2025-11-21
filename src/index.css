@@ -1,0 +1,53 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+body{
+  /* background-image: linear-gradient(to bottom,rgb(3, 3, 3),rgb(77, 77, 77),rgb(150, 150, 150)); */
+ overflow-x: hidden;
+}
+.my-card{
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: white;
+}
+.my-card:hover{
+  background-color: rgb(161, 161, 161);     
+  transform: translateY(-5px);   
+  cursor: pointer;
+}
+#project-1{
+  background-color: #64496F;
+}
+#project-2{
+  background-color: rgb(141, 141, 141);
+}
+#project-3{
+  background-color: #FEB646;
+}
+.float-btn {
+  animation: float 2s ease-in-out infinite;
+}
+.float-btn:hover{
+  background-color: #292929;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#project-form{
+  background-color: rgb(186, 186, 186,0.5);
+}
+#allproposal{
+  background-color: rgba(100, 100, 100, 0.775);
+  min-height: 100vh;
+  padding: 40px;
+}
