@@ -23,7 +23,7 @@ function Home() {
         <Header/>
         {/* landing */}
         <div id='home'>
-            <video  autoPlay muted loop width={'100%'} src="/public/wave.mp4"></video>
+            <video  autoPlay muted loop width={'100%'} src="/wave.mp4"></video>
         </div>
 
         {/* About  */}

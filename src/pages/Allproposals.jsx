@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { getAllProposalAPI} from '../services/allAPI'
-
+import { Link } from 'react-router-dom'
 
 function Allproposals() {
    const [getAll,setGetAll] = useState()
@@ -41,8 +41,9 @@ function Allproposals() {
         </div>
             ))
             :
-            <div className='d-flex align-items-center justify-content-center'>
-                <img src="https://cdn.dribbble.com/userupload/22180708/file/original-fb0f3fcb86aa71d393a578acb476b44c.gif" alt="" />
+            <div style={{height:'70vh'}} className='d-flex align-items-center justify-content-center flex-column'>
+                <h4>Nothing to See Here !</h4>
+                <Link to={'/'} className='btn btn-outline-light mt-2'>Go Back to Home</Link>
             </div>
         }
     </div>
